@@ -20,5 +20,6 @@ match* match_new(unsigned int player_a_id, unsigned int player_b_id);
 unsigned int match_set_winner(int winner);
 void match_start(match* m);
 void match_stop(match* m);
+void match_winner(match* m, unsigned int winner_id, unsigned int loser_id);
 
 #endif /* MATCH_H */

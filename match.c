@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include "match.h"
+#include "utils.h"
 
 match* match_new(unsigned int player_a_id, unsigned int player_b_id) {
   match* m = malloc(sizeof(match));
@@ -15,4 +16,9 @@ void match_start(match* m) {
 
 void match_stop(match* m) {
   m->stop_time = time(NULL);
+}
+
+void match_winner(match* m, unsigned int winner_id, unsigned int loser_id) {
+  m->winner = true;
+  m->loser = false;
 }

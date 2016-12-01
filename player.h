@@ -1,7 +1,6 @@
 #ifndef PLAYER_H
 #define PLAYER_H
-
-typedef enum { false, true } bool;
+#include "utils.h"
 
 struct player_struct;
 

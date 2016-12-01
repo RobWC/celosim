@@ -6,6 +6,6 @@
 #define MIN_ELO 600
 
 int main() {
-  printf("Max ELO %d", MAX_ELO);
+  printf("Max ELO %d\n", MAX_ELO);
   return 0;
 }

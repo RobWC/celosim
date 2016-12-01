@@ -1,4 +1,5 @@
 #include "player.h"
+#include "utils.h"
 
 void player_start_game(player* p) {
   p->in_game = true;
