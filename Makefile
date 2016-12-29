@@ -1,5 +1,5 @@
 build: 
-	gcc -o elosim main.c player.c match.c
+	gcc main.c player.c match.c elo.c -lm -o elosim
 
 clean:
-	rm elosim
+	-rm elosim

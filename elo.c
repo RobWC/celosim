@@ -1,6 +1,14 @@
-import "elo.h"
+#include <math.h>
+#include "utils.h"
+#include "elo.h"
 
-int calc_elo(int player_a, int player_b) {
+int calc_elo(int player, int opponent, bool win) {
+
+  float k_factor = KFACTOR_BASE;
   
-  return 0;
+  float f = 1 / ((float)1 + powf(10.0, (float)((opponent-player)/400)));
+
+  float elo = (float)player + k_factor*((float)win-f);
+ 
+  return (int)elo;
 }
